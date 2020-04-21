@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+    sync:
+        # image: cweagans/bg-sync
+        build: .
+        volumes:
+            - ./config:/root/.unison
+            - ./bin:/root/bin
+            - ./testing:/source
+            - target:/target
+        command: "/root/bin/start.sh"
+
+volumes:
+    target:
