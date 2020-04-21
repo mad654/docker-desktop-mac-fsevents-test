@@ -51,3 +51,10 @@ btw: you can monitor directories in realtime with
 docker-compose exec sync watch "ls -la /source /target"
 ```
 
+## Result
+
+On linux based docker hosts all works like a charme.
+On mac based docker hosts (docker desktop) osxfs sends for each rm a CREATE + DELETE
+event ( compare to docker-compose logs ) which seems to confuse sync.
+
+Any idea how to fix this?
