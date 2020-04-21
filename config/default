@@ -13,7 +13,7 @@ silent=false
 fastcheck=true
 
 # changed
-# repeat=watch
+repeat=watch
 
 
 contactquietly=false

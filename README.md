@@ -21,3 +21,10 @@ docker-compose exec sync ls -la /source /target
 
 Now we see all files remove in source but still exists in target!?
 
+
+btw: you can monitor directories in realtime with
+
+```
+docker-compose exec sync watch "ls -la /source /target"
+```
+
